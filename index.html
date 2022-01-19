@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/8197eb53f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web</title>
+</head>
+<body>
+    <header><!--Top Navigation Bar-->
+        <div class="nav">
+            <div class="navBrand">
+                <div class="logo"><p>M</p></div>
+                <div class="navName"><p>Minimalista</p></div>
+            </div>
+            <div class="navLinks">
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#AboutUs">About Us</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+                <div class="burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!--About the company-->
+        <div class="about">
+            <div class="aboutUs" id="AboutUs">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti, ducimus obcaecati facilis optio aliquam sint ad alias repudiandae commodi repellendus veniam voluptate aperiam impedit perferendis culpa qui corporis quisquam.</p>
+            </div>
+            <div class=features>
+                <div class="feature1">
+                    <div class="featureImg">
+                         <img class="Img" src="Images/room1.png" alt="Spacious loft">
+                    </div>
+                    <h3>Duis aute irure</h3>
+                    <p>Tempus quam pellentesque nec nam aliquam sem et tortor. Quam pellentesque nec nam aliquam sem et tortor. Eget dolor morbi non arcu.</p>
+                </div>
+                <div class="feature2">
+                    <div class="featureImg">
+                        <img class="Img" src="Images/room2.png" alt="Large meeting halls">
+                    </div>
+                    <h3>Montes nascetur ridiculus</h3>
+                    <p>Quis hendrerit dolor magna eget est lorem. Parturient montes nascetur ridiculus mus mauris vitae. Vivamus at augue eget arcu dictum varius duis at consectetur.</p>
+                </div>
+                <div class="feature3">
+                    <div class="featureImg">
+                        <img class="Img" src="Images/room3.png" alt="Elegant living rooms">
+                    </div>
+                    <h3>Euismod in pellentesque</h3>
+                    <p>Montes nascetur ridiculus mus mauris. Eget egestas purus viverra accumsan in nisl nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
+                </div>
+            </div>
+        </div>
+        <!--About the Team-->
+        <div class="ourTeam">
+            <h2>~Our Team~</h2>
+            <p>Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla.</p>
+        </div>
+        <div class="Team">
+            <div class="memeber">
+                <img class="memberImg" src="Images/team1.png" alt="Melissa Style">
+                <div class="memberInfo">
+                    <h4 class="name">Melissa Style</h4>
+                    <h4 class="role">Graphic Designer</h4>
+                </div>
+                <div class="socialLinks">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member">
+                <img class="memberImg" src="Images/team2.png" alt="Frank Star">
+                <div class="memberInfo">
+                    <h4 class="name">Frank Star</h4>
+                    <h4 class="role">Boss</h4>
+                </div>
+                <div class="socialLinks">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member">
+                <img class="memberImg" src="Images/team3.png" alt="Jane Naismith">
+                <div class="memberInfo">
+                    <h4 class="name">Jane Naismith</h4>
+                    <h4 class="role">Graphic Designer</h4>
+                </div>
+                <div class="socialLinks">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member">
+                <img class="memberImg" src="Images/team4.png" alt="Mark Stoner">
+                <div class="memberInfo">
+                    <h4 class="name">Mark Stoner</h4>
+                    <h4 class="role">Web Developer</h4>
+                </div>
+                <div class="socialLinks">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!--Contact Info-->
+        <div class="companyLinks">
+            <a href="#"><i class="fab fa-facebook"></i>FACEBOOK</a>
+            <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
+            <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+            <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+        </div>
+        <div class="ContactUs" id="contact">
+            <div class="addresses">
+                <h5>Company Address</h5>
+                <p>Responsive Street 7</p>
+                <p>London - United Kingdom</p>
+                <p>Europe</p>
+            </div>
+            <div class="email">
+                <h5>E-mail</h5>
+                <p>contact@yourdomain.com</p>
+                <p>office@yourdomain.com</p>
+            </div>
+            <div class="phone">
+                <h5>Phone Numbers</h5>
+                <p>0800 4521 800 50</p>
+                <p>0450 5896 625 16</p>
+                <p>0798 6546 465 15</p>
+            </div>
+        </div>
+        <hr>
+            <div class="copyright">
+                <p>Copyright 2045 - Your Domain Name</p>
+                <p>Design and coding by Responsive Team</p>
+            </div>
+    </footer>
+
+    <script>
+        function myFunction(){
+            const burger = document.querySelector(".burger");
+            const links = document.querySelector(".links");
+
+            burger.addEventListener('click', function(){
+                burger.classList.toggle("change");
+                links.classList.toggle("clicked");
+            });
+            
+        }
+        myFunction();
+    </script>
+</body>
+</html>

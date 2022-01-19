@@ -1,0 +1,268 @@
+body{
+    font-family:'Poppins', arial, sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBrand{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left:2rem;
+}
+.logo{
+    background: #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: 35px;
+}
+.navName{
+    padding: 0px 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding-right: 10px;
+}
+.links a{
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #000;
+}
+.links a:hover{
+    border-bottom: 1px solid #424242;
+    color: #424242;
+}
+.burger{
+    display: none;
+}
+.bar1, .bar2, .bar3{
+    width: 25px;
+    height: 2px;
+    background-color:#000;
+    margin: 6px 0; 
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{opacity: 0;}
+.change .bar3{
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+.aboutUs{
+    margin-top: 3rem;
+}
+.aboutUs{
+    grid-area: aboutUs;
+    text-align: center;
+}
+.aboutUs h1{
+    font-weight: 200;
+    font-size: 4em;
+    margin:0;
+}
+.aboutUs p{
+    margin: 1rem 20rem;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.Img{
+    width: 510px;
+    height:300px;
+}
+.features{
+    display: grid;
+    margin: 5rem 10rem 0;
+    padding: 6rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.features h3{
+    font-weight: 300;
+}
+.features p{
+    font-weight:200;
+}
+.ourTeam{
+    text-align: center;
+    font-weight: 300;
+}
+.ourTeam h2{
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+}
+.ourTeam p{
+    font-size: 18px;
+    margin: 0 20rem;
+    font-weight: 300;
+}
+.Team{
+    display: grid;
+    justify-content: center;
+    padding: 6rem 0;
+    margin: 0 25rem 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap:20px;
+}
+.memberImg{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+.memberInfo{
+    padding:10px 0;
+}
+.name, .role{
+    margin: 0;
+    font-weight: 400;
+}
+.socialLinks a {
+    padding: 0 2.5px;
+    color:#000;
+}
+.socialLinks a:hover{
+    color:#3b3b3b;
+}
+
+footer{
+    background-color:#282828;
+    margin: 4rem 2rem 2rem;
+}
+.companyLinks{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.companyLinks a {
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.companyLinks i {
+    padding: 0 10px;
+}
+.ContactUs{
+    display: grid;
+    padding: 2rem 15rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.addresses h5, .email h5, .phone h5{
+    color: #575757;
+    font-weight: 500;
+}
+.addresses p, .email p, .phone p{
+    font-size: 14px;
+    color: #787878;
+}
+.addresses, .email, .phone{
+    justify-self: center;
+}
+
+hr{
+    width: 80%;
+    border: 1px solid #787878;
+}
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    color: #787878;
+}
+@media screen and (max-width: 1680px){
+    .Img{
+        width: 420px;
+        height:200px;
+    }
+    .Team{
+        display: grid;
+        justify-content: center;
+        padding: 6rem 0;
+        margin: 0 20rem 10rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap:20px;
+    }
+
+}
+@media screen and (max-width: 1550px){
+    .aboutUs p{
+        margin: 1rem auto;
+        padding: 0 10px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .Img{
+        width: 410px;
+        height:200px;
+    }
+    .features{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 5rem 0;
+        padding: 6rem 0;
+        grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+        column-gap: 20px;
+    }
+    .ourTeam p{
+        font-size: 18px;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+    .Team{
+        padding: 6rem 0;
+        margin: 0 5rem 5rem;
+    }
+    .ContactUs{ 
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .featureImg{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .burger{
+        display: inline-block;
+    }
+    .navLinks, .links{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .links{
+        display: none;
+    }
+    .links a:hover{
+        border-bottom: 1px solid #424242;
+        color: #424242;
+    }
+    .clicked{
+        position: absolute;
+        right: 0px;
+        height: 20vh;
+        top: 8vh;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+    }
+    .ContactUs{
+        display: flex;
+        flex-direction: column;
+    }
+}
